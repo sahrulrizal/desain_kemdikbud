@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<!-- Meta data -->
+		<meta charset="UTF-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+		<meta content="Aronox – Admin Bootstrap4 Responsive Webapp Dashboard Templat" name="description">
+		<meta content="Spruko Technologies Private Limited" name="author">
+		<meta name="keywords" content="admin site template, html admin template,responsive admin template, admin panel template, bootstrap admin panel template, admin template, admin panel template, bootstrap simple admin template premium, simple bootstrap admin template, best bootstrap admin template, simple bootstrap admin template, admin panel template,responsive admin template, bootstrap simple admin template premium"/>
+
+		<!-- Title -->
+		<title>Dashboard ETLE</title>
+
+		<!--Favicon -->
+		<link rel="icon" href="assets/images/brand/favicon.ico" type="image/x-icon"/>
+
+		<!-- Style css -->
+		<link href="assets/css/style.css" rel="stylesheet" />
+
+		<!--Horizontal css -->
+        <link id="effect" href="assets/plugins/horizontal-menu/dropdown-effects/fade-up.css" rel="stylesheet" />
+        <link href="assets/plugins/horizontal-menu/horizontal.css" rel="stylesheet" />
+
+		<!-- P-scroll bar css-->
+		<link href="assets/plugins/p-scroll/perfect-scrollbar.css" rel="stylesheet" />
+
+		<!---Icons css-->
+		<link href="assets/plugins/iconfonts/icons.css" rel="stylesheet" />
+		<link href="assets/plugins/iconfonts/font-awesome/font-awesome.min.css" rel="stylesheet">
+		<link href="assets/plugins/iconfonts/plugin.css" rel="stylesheet" />
+
+		<!-- Forn-wizard css-->
+		<link href="assets/plugins/forn-wizard/css/forn-wizard.css" rel="stylesheet" />
+		<link href="assets/plugins/formwizard/smart_wizard.css" rel="stylesheet">
+        <link href="assets/plugins/formwizard/smart_wizard_theme_dots.css" rel="stylesheet">
+        
+        <!-- Accordion Css -->
+		<link href="assets/plugins/accordion/accordion.css" rel="stylesheet" />
+
+		<!-- Skin css-->
+        <link id="theme" rel="stylesheet" type="text/css" media="all" href="assets/skins/hor-skin/hor-skin1.css" />
+
+        <!-- Tabs css-->
+		<link href="assets/plugins/tabs/style.css" rel="stylesheet" />
+
+	</head>
+	<style>
+		.bg-dafault{
+			background: #EEE;
+		}
+		.bg-dafault{
+			background: #EEE;
+		}
+
+		#map {
+			height: 100%;
+		}
+	</style>
+	<body class="app">
+
+		<!---Global-loader-->
+		<div id="global-loader" >
+			<img src="assets/images/svgs/loader.svg" alt="loader">
+		</div>
+
+		<div class="page">
+			<div class="page-main">
+				<div class="header top-header">
+					<div class="container">
+						<div class="d-flex">
+							<a id="horizontal-navtoggle" class="animated-arrow hor-toggle"><span></span></a><!-- sidebar-toggle-->
+							<a class="header-brand" href="index.html">
+								<img src="assets/images/brand/logo-matrik.png" class="header-brand-img desktop-lgo" alt="Aronox logo">
+								<img src="assets/images/brand/logo-matrik.png" class="header-brand-img mobile-logo" alt="Aronox logo">
+							</a>
+							<div class="mt-1">
+								<form class="form-inline">
+									<div class="search-element">
+										<input type="search" class="form-control header-search" placeholder="Search…" aria-label="Search" tabindex="1">
+										<button class="btn btn-primary-color" type="submit"><i class="fa fa-search"></i></button>
+									</div>
+								</form>
+							</div><!-- SEARCH -->
+							<div class="d-flex order-lg-2 ml-auto">
+								<a href="#" data-toggle="search" class="nav-link nav-link-lg d-md-none navsearch"><i class="fa fa-search"></i></a>
+								<div class="dropdown   header-fullscreen" >
+									<a  class="nav-link icon full-screen-link"  id="fullscreen-button">
+										<i class="mdi mdi-arrow-collapse"></i>
+									</a>
+								</div>
+								<label class="custom-switch" >
+									<input type="checkbox" id="togBtn" name="custom-switch-checkbox" onchange="change_mode()" class="custom-switch-input">
+									<span class="custom-switch-indicator"></span>
+									<a class="nav-link pr-0 leading-none" aria-expanded="false">
+									    <div class="profile-details">
+											<span class="mr-3 font-weight" for="darkSwitch">Dark Mode</span>
+										</div>
+									 </a>
+								</label>
+
+								<div class="dropdown d-md-flex message">
+									<a class="nav-link icon text-center" data-toggle="dropdown">
+										<i class="mdi mdi-email-outline"></i>
+										<span class="nav-unread bg-danger pulse"></span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow w-300  pt-0">
+									    <div class="dropdown-header mt-0 pt-0 border-bottom p-4">
+											<h5 class="dropdown-title mb-1 font-weight-semibold text-drak">Messages</h5>
+											<p class="dropdown-title-text subtext mb-0 pb-0 ">You have 4 unread messages</p>
+										</div>
+										<a href="#" class="dropdown-item d-flex pb-4 pt-4">
+											<div class="avatar avatar-md  mr-3 d-block cover-image border-radius-4" data-image-src="assets/images/users/5.jpg">
+												<span class="avatar-status bg-green"></span>
+											</div>
+											<div>
+											    <small class="dropdown-text">Madeleine</small>
+												<p class="mb-0 fs-13 text-muted">Hey! there I' am available</p>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-4 pt-4">
+											<div class="avatar avatar-md  mr-3 d-block cover-image border-radius-4" data-image-src="assets/images/users/8.jpg">
+												<span class="avatar-status bg-red"></span>
+											</div>
+											<div>
+												<small class="dropdown-text">Anthony</small>
+												<p class="mb-0 fs-13 text-muted ">New product Launching</p>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-4 pt-4">
+											<div class="avatar avatar-md  mr-3 d-block cover-image border-radius-4" data-image-src="assets/images/users/11.jpg">
+												<span class="avatar-status bg-yellow"></span>
+											</div>
+											<div>
+												<small class="dropdown-text">Olivia</small>
+												<p class="mb-0 fs-13 text-muted">New Schedule Realease</p>
+											</div>
+										</a>
+										<div class="dropdown-divider mt-0"></div>
+										<a href="#" class="dropdown-item text-center">See all Messages</a>
+									</div>
+								</div><!-- MESSAGE-BOX -->
+								<div class="dropdown header-notify">
+									<a class="nav-link icon" data-toggle="dropdown">
+										<i class="mdi mdi-bell-outline"></i>
+										<span class=" bg-success pulse-success "></span>
+									</a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow pt-0">
+									  <div class="dropdown-header border-bottom p-4 pt-0 mb-3 w-270">
+									        <div class="d-flex">
+												<h5 class="dropdown-title float-left mb-1 font-weight-semibold text-drak">Notifications</h5>
+												<a href="#" class="fe fe-align-justify text-right float-right ml-auto text-muted"></a>
+											</div>
+										</div>
+										<a href="#" class="dropdown-item d-flex pb-2 pt-2">
+											<div class="card box-shadow-0 mb-0">
+												<div class="card-body p-3">
+													<div class="notifyimg bg-gradient-primary border-radius-4">
+														<i class="mdi mdi-email-outline"></i>
+													</div>
+													<div>
+														<div>Message Sent.</div>
+														<div class="small text-muted">3 hours ago</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex  pb-2">
+											<div class="card box-shadow-0 mb-0 ">
+												<div class="card-body p-3">
+													<div class="notifyimg bg-gradient-danger border-radius-4 bg-danger">
+														<i class="fe fe-shopping-cart"></i>
+													</div>
+													<div>
+														<div> Order Placed</div>
+														<div class="small text-muted">5  hour ago</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<a href="#" class="dropdown-item d-flex pb-2">
+											<div class="card box-shadow-0 mb-0">
+												<div class="card-body p-3">
+													<div class="notifyimg bg-gradient-success  border-radius-4 bg-success mr-2">
+														<i class="fe fe-airplay"></i>
+													</div>
+													<div>
+														<div>Your Admin launched</div>
+														<div class="small text-muted">1 daya ago</div>
+													</div>
+												</div>
+											</div>
+										</a>
+										<div class=" text-center p-2 border-top mt-3">
+											<a href="#" class="">View All Notifications</a>
+										</div>
+									</div>
+								</div>
+								<div class="dropdown ">
+									<a class="nav-link pr-0 leading-none" href="#" data-toggle="dropdown" aria-expanded="false">
+										<img class="avatar avatar-md brround" src="assets/images/users/1.jpg" alt="image">
+									 </a>
+									<div class="dropdown-menu dropdown-menu-right dropdown-menu-arrow w-250">
+										<div class="user-profile border-bottom p-3">
+											<div class="user-image"><img class="user-images" src="assets/images/users/1.jpg" alt="image"></div>
+											<div class="user-details">
+												<h4>Anna Sthesia</h4>
+												<p class="mb-1 fs-13 text-muted">AnnaSthesia@gmail.com</p>
+											</div>
+										</div>
+										<a href="login.html" class="dropdown-item pt-3 pb-3"><i class="dropdown-icon  mdi  mdi-logout-variant text-primary"></i>Sign Out</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Horizontal-menu -->
+				<div class="horizontal-main hor-menu clearfix" style="z-index: 1;">
+					<div class="horizontal-mainwrapper container clearfix">
+						<nav class="horizontalMenu clearfix">
+							<ul class="horizontalMenu-list">
+								<li aria-haspopup="true"><a href="index.html" class="sub-icon"> <i class="fe fe-monitor"></i>  Dashboard</a></li>
+								<li aria-haspopup="true"><a href="validasi_pelanggaran.html" class="sub-icon "> <i class="fe fe-alert-triangle"></i> Validasi Pelanggaran</a></li>
+								<li aria-haspopup="true"><a href="data_pelanggaran.html" class="sub-icon active"><i class="fe fe-bar-chart-2"></i> Data Pelanggaran</a>
+									<!-- <ul class="sub-menu">
+										<li aria-haspopup="true"><a href="cards.html">Tervalidasi</a></li>
+										<li aria-haspopup="true"><a href="cards-image.html">Terberkas</a></li>
+										<li aria-haspopup="true"><a href="chat.html">Dikirim</a></li>
+										<li aria-haspopup="true"><a href="notify.html">Dikonfirmasi</a></li>
+										<li aria-haspopup="true"><a href="sweetalert.html">Lunas</a></li>
+										<li aria-haspopup="true"><a href="rangeslider.html">Belum Bayar</a></li>
+										<li aria-haspopup="true"><a href="scroll.html">Blokir SIM</a></li>
+									</ul> -->
+								</li>
+								<!-- <li aria-haspopup="true"><a href="alarm.html" class=""> <i class="fe fe-bell"></i>  Alarm </a></li>
+								<li aria-haspopup="true"><a href="handling.html" class=""> <i class="fe fe-chevrons-up"></i> Fault Handling</a></li>
+								<li aria-haspopup="true"><a href="rootcause.html" class=""> <i class="fe fe-git-commit"></i>  Root Cause Analys</a></li> -->
+							</ul>
+						</nav>
+						<!--Nav end -->
+					</div>
+				</div>
+				<!-- Horizontal-menu end -->
+				<div class="app-content page-body">
+					<div class="container">
+
+						<!--Page header-->
+						 <div class="page-header">
+							<div class="page-leftheader">
+                                <h4 class="page-title">Detail Pelanggaran</h4>
+                                <ol class="breadcrumb pl-0">
+									<li class="breadcrumb-item"><a href="data_pelanggaran.html">Data Pelanggaran</a></li>
+									<li class="breadcrumb-item active" aria-current="page">Detail Pelanggaran</li>
+								</ol>
+							</div>
+						</div> 
+						<!--End Page header-->
+
+						<!--row open-->
+						<div class="row">
+							<div class="col-12">
+								<div class="card">
+									<div class="card-header">
+										<h3 class="card-title">#IDPL001</h3>
+									</div>
+									<div class="card-body">
+										<div id="smartwizard-3">
+											<ul>
+												<li><a href="#step-10">Tervalidasi</a></li>
+												<li><a href="#step-11">Terberkas</a></li>
+                                                <li><a href="#step-12">Terkirim</a></li>
+                                                <li><a href="#step-13">Terkonfirmasi</a></li>
+												<li><a href="#step-14">Terbayar</a></li>
+												<li><a href="#step-15">Blokir SIM</a></li>
+											</ul>
+											
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+                        <!--row closed-->
+                        
+                        <!-- Row -->
+						<div class="row">
+							<div class="col-xl-3 col-lg-5 col-md-12">
+								<div class="card ">
+									<div class="card-body">
+										<div class="inner-all">
+											<ul class="list-unstyled">
+                                                <div class="panel panel-danger">
+                                                    <div class="list-group">
+                                                        <a href="#" class="list-group-item active text-center">Lawan Arus</a>
+                                                    </div>
+                                                </div>
+                                                    <ul class="list-group no-margin">
+                                                        <li class="list-group-item"><i class="fe fe-credit-card mr-4"></i>D 1712 BKA</li>
+                                                        <li class="list-group-item"><i class="fe fe-calendar mr-4"></i>23 September 2020</li>
+                                                        <li class="list-group-item"><i class="fe fe-clock mr-4"></i>13:57:00 AM</li>
+                                                        <li class="list-group-item"><i class="fe fe-map-pin mr-4"></i> Jl. Ir Juanda  </li>
+                                                    </ul>
+												<li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="card panel-theme rounded shadow">
+									<div class="card-header">
+										<div class="float-left">
+											<h3 class="card-title">Contact</h3>
+										</div>
+										<div class="card-options text-right">
+											<a href="#" class="btn btn-sm btn-primary mr-2"><i class="fa fa-facebook"></i></a>
+											<a href="#" class="btn btn-sm btn-primary mr-2"><i class="fa fa-twitter"></i></a>
+											<a href="#" class="btn btn-sm btn-primary"><i class="fa fa-google-plus"></i></a>
+										</div>
+										<div class="clearfix"></div>
+									</div>
+									<div class="card-body no-padding rounded">
+										<ul class="list-group no-margin">
+											<li class="list-group-item"><i class="fa fa-envelope mr-4"></i> support@demo.com</li>
+											<li class="list-group-item"><i class="fa fa-globe mr-4"></i> www.support.com</li>
+											<li class="list-group-item"><i class="fa fa-phone mr-4"></i> +125 5826 3658 </li>
+										</ul>
+									</div>
+								</div>
+							</div>
+							<div class="col-xl-9 col-lg-7 col-md-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class=" " id="profile-log-switch">
+                                            <div class="fade show active " >
+                                                <div class="table-responsive border ">
+                                                    <table class="table row table-borderless w-100 m-0 ">
+                                                        <tbody class="col-lg-4 p-0">
+                                                            <tr>
+                                                                <td><strong>Merk</strong></td>
+                                                                <td>:</td>
+                                                                <td>Honda</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><strong>Model</strong></td>
+                                                                <td>:</td>
+                                                                <td>Swift</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody class="col-lg-4 p-0">
+                                                            <tr>
+                                                                <td><strong>Tahun</strong></td>
+                                                                <td>:</td>
+                                                                <td>2020</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><strong>Warna</strong></td>
+                                                                <td>:</td>
+                                                                <td>Hitam</td>
+                                                            </tr>
+                                                        </tbody>
+                                                        <tbody class="col-lg-4 p-0">
+                                                            <tr>
+                                                                <td><strong>Pemilik</strong></td>
+                                                                <td>:</td>
+                                                                <td>Yudi Wahyudi</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td><strong>No. Rangka</strong></td>
+                                                                <td>:</td>
+                                                                <td>ABCD EFGH</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+								<div class="profile-cover card">
+                                    <div class="card-header">
+                                        <div class="float-left">
+                                            <h3 class="card-title">Bukti Pelanggaran</h3>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                    </div>
+									<div class="cover shadow no-overflow">
+										<div class="inner-cover">
+											<!-- Start offcanvas btn group menu: This menu will take position at the top of profile cover (mobile only). -->
+											<img  src="assets/images/photos/about.jpg" class="img-responsive full-width h-300" alt="cover" >
+										</div>
+										<ul class="list-unstyled no-padding hidden-sm hidden-xs cover-menu">
+											<li class="active"><a href="#"><i class="fa fa-fw fa-photo"></i> <span>Photos</span> <small>(10)</small></a></li>
+											<li><a href="#"><i class="fa fa-fw fa-video-camera"></i><span> Video </span><small>(1)</small></a></li>
+										</ul>
+									</div><!-- /.cover -->
+                                </div><!-- /.profile-cover -->
+
+
+                                <div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Historikal Pelanggaran</h3>
+									</div>
+									<div class="card-body p-6">
+										 <div class="tab_wrapper second_tab">
+											<ul class="tab_list">
+												<li class="">Tervalidasi</li>
+												<li>Terberkas</li>
+												<li>Terkirim</li>
+												<li>Terkonfirmasi</li>
+												<li>Terbayar</li>
+												<li>Blokir SIM</li>
+											</ul>
+											<div class="content_wrapper">
+												<div class="tab_content active">
+													<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+														using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+														sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like) It is a long established fact that a reader will be distracted by the readable
+														content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+														Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,
+														sometimes by accident, sometimes on purpose now use Lorem Ipsum as their default model text, and a search for  over the years,
+														sometimes by accident, sometimes on purpose</p>
+												</div>
+												<div class="tab_content">
+													<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+														Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
+														1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
+														"Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years
+														old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+														discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+														very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+												</div>
+												<div class="tab_content">
+													<p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to
+														using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web
+														sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like) It is a long established fact that a reader will be distracted by the readable
+														content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.
+														Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years,
+														sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+												</div>
+												<div class="tab_content">
+													<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+														Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
+														1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
+														"Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years
+														old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+														discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+														very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+												</div>
+												<div class="tab_content">
+													<p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage
+														of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator
+														on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition,
+														injected humour, or non-characteristic words etc. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look
+														even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined
+														chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The
+														generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+												</div>
+												<div class="tab_content">
+													<p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in
+														Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections
+														1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum,
+														"Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years
+														old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,
+														discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics,
+														very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+
+                                <div class="card">
+									<div class="card-header">
+										<h3 class="card-title">Historikal Pelanggaran</h3>
+									</div>
+									<div class="card-body">
+										<!-- Accordion begin -->
+										<ul class="demo-accordion accordionjs m-0" data-active-index="false">
+
+											<!-- Section 1 -->
+											<li>
+												<div><h3>Tervalidasi</h3></div>
+												<div>
+													<!-- Your text here. For this demo, the content is generated automatically. -->
+												</div>
+											</li>
+											<!-- Section 2 -->
+											<li>
+												<div><h3>Terberkas</h3></div>
+												<div>
+													<!-- Your text here. For this demo, the content is generated automatically. -->
+												</div>
+											</li>
+											<!-- Section 3 -->
+											<li>
+												<div><h3>Terkonfirmasi</h3></div>
+												<div>
+													<!-- Your text here. For this demo, the content is generated automatically. -->
+												</div>
+                                            </li>
+                                            <!-- Section 4 -->
+											<li>
+												<div><h3>Terbayar</h3></div>
+												<div>
+													<!-- Your text here. For this demo, the content is generated automatically. -->
+												</div>
+                                            </li>
+                                            <!-- Section 5 -->
+											<li>
+												<div><h3>Blokir SIM</h3></div>
+												<div>
+													<!-- Your text here. For this demo, the content is generated automatically. -->
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						
+
+					</div>
+				</div><!-- end app-content-->
+			</div>
+
+			<!--Footer-->
+			<footer class="footer">
+				<div class="container">
+					<div class="row align-items-center flex-row-reverse">
+						<div class="col-md-12 col-sm-12 mt-3 mt-lg-0 text-center">
+							Copyright © 2020 <a href="#">PT Madina Mitra Teknik</a> All rights reserved.
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!-- End Footer-->
+
+		</div>
+
+		<!-- Back to top -->
+		<a href="#top" id="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+		<!-- Jquery js-->
+		<script src="assets/js/vendors/jquery-3.4.0.min.js"></script>
+
+		<!-- Bootstrap4 js-->
+		<script src="assets/plugins/bootstrap/popper.min.js"></script>
+		<script src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+
+		<!--Othercharts js-->
+		<script src="assets/plugins/othercharts/jquery.sparkline.min.js"></script>
+
+		<!-- Circle-progress js-->
+		<script src="assets/js/vendors/circle-progress.min.js"></script>
+
+		<!-- Jquery-rating js-->
+		<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+
+		<!--Horizontal js-->
+		<script src="assets/plugins/horizontal-menu/horizontal.js"></script>
+
+		<!-- P-scroll js-->
+		<script src="assets/plugins/p-scroll/perfect-scrollbar.js"></script>
+
+		<!-- Forn-wizard js-->
+		<script src="assets/plugins/formwizard/jquery.smartWizard.js"></script>
+		<script src="assets/plugins/formwizard/fromwizard.js"></script>
+
+		<!--Accordion-Wizard-Form js-->
+		<script src="assets/plugins/accordion-Wizard-Form/jquery.accordion-wizard.min.js"></script>
+		<script src="assets/js/form-wizard.js"></script>
+
+		<!-- Custom js-->
+        <script src="assets/js/custom.js"></script>
+        
+        <!-- Accordion js-->
+		<script src="assets/plugins/accordion/accordion.min.js"></script>
+        <script src="assets/js/accordion.js"></script>
+        
+        <!---Tabs js-->
+		<script src="assets/plugins/tabs/jquery.multipurpose_tabcontent.js"></script>
+		<script src="assets/js/tabs.js"></script>
+
+	</body>
+</html>
